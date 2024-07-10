@@ -1,0 +1,41 @@
+.welcomeBody {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.emailInput {
+    width: 200px;
+}
+
+.passwordInput {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.loginBtn {
+    margin-top: 5px;
+    width: 50px;
+}
+
+.joinBtn {
+    margin-top: 5px;
+    width: 50px;
+}

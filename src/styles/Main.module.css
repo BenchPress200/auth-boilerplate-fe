@@ -1,0 +1,45 @@
+.mainBody {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBox {
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.commonBtn {
+    width: 150px;
+    height: 50px;
+}
+
+.btnBox {
+    display: flex;
+    flex-direction: column;
+    
+    height: 150px;
+}
+
+.resultBox {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 40px;
+
+    border: 1px solid #000000;
+}

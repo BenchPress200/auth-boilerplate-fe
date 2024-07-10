@@ -1,0 +1,50 @@
+.joinBody {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.joinForm {
+    width: 300px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.emailBox {
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.authBox {
+    width: 290px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.passwordBox {
+    width: 290px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commonLabelBox {
+    width: 70px;
+}
+
