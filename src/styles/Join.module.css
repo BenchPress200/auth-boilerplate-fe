@@ -48,3 +48,12 @@
     width: 70px;
 }
 
+.authBtn {
+    background-color: tomato;
+}
+
+.joinBtn {
+    background-color: rgb(155, 149, 149);
+    font-weight: 700;
+}
+
