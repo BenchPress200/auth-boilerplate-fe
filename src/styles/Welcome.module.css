@@ -31,11 +31,29 @@
 }
 
 .loginBtn {
-    margin-top: 5px;
+    margin-top: 15px;
     width: 50px;
 }
 
 .joinBtn {
     margin-top: 5px;
     width: 50px;
+}
+
+.kakaoIcon {
+    margin-top: 10px;
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 10px; /* 아이콘에 약간의 둥근 모서리를 줍니다. */
+    background-color: #ffe812; /* 배경색을 카카오톡 노란색으로 설정 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 기본 입체감 */
+}
+
+.kakaoIcon:hover {
+    transform: scale(1.1); /* 아이콘을 10% 키웁니다. */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* 호버 시 더 강한 입체감 */
 }

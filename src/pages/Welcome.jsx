@@ -1,8 +1,13 @@
 import {useRef, useState, useEffect} from 'react'
 import styles from '../styles/Welcome.module.css';
+import { useNavigate } from 'react-router-dom';
+import kakaoIcon from '../assets/kakao-talk.png';
 
 
 const Welcome = () => {
+
+    const navigate = useNavigate();
+
     const emailRef = useRef("");
     const passwordRef = useRef("");
 
@@ -21,6 +26,10 @@ const Welcome = () => {
             "width=500, height=500, top=0, left=0, resizable=yes"
         )
     }
+
+    const moveToKaKaoLogin = () => {
+        navigate('/');
+      };
 
     const login = (e) => { //로그인성공하면 아이디와 쿠키 유지해야핢 
         e.preventDefault();
@@ -54,12 +63,14 @@ const Welcome = () => {
     return (
       <>
         <div className={styles.welcomeBody}>
-
             <form className={styles.loginForm} action='/main'>
                 <input className={styles.emailInput} type="text" placeholder='Email' onInput={inputEmail}></input>
                 <input className={styles.passwordInput} type="password" placeholder='Password' onInput={inputPassword}></input>
+
                 <button className={styles.loginBtn} type="submit" onClick={login}>Login</button>
                 <button className={styles.joinBtn} onClick={moveToJoin} type='button'>Join</button>
+
+                <img className={styles.kakaoIcon} src={kakaoIcon} alt="kakao" onClick={moveToKaKaoLogin}></img>
             </form>
 
         </div>

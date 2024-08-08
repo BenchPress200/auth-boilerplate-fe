@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Join from "./pages/Join";
 import Main from "./pages/Main"
+import VideoChat from "./pages/VideoChat"
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
               <Route path={"/"} element={<Welcome />}></Route>
               <Route path={"/join"} element={<Join />}></Route>
               <Route path={"/main"} element={<Main />}></Route>
+              <Route path={"/videoChat/:roomId"} element={<VideoChat />}></Route>
             </Routes>
         </BrowserRouter>
     </div>
